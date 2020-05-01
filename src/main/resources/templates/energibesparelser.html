@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energibesparelse</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="w3-container">
+
+    <!-- logo -->
+    <div class="w3-container w3-section">
+        <a href="/">
+            <img src="images/albertslund-forsyning-logo.png" class="w3-hover-opacity" alt="Logo">
+        </a>
+    </div>
+    <!-- logo end -->
+
+    <!-- topnav -->
+    <div class="topnav" id="myTopnav">
+        <div class="search-container">
+            <input type="text" placeholder="Skriv hvad du søger..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="/driftsstatus">Driftsstatus</a>
+        <a href="/energibesparelser" class="active">Energibesparelser</a>
+        <a href="/tao">TAO-Ordningen</a>
+        <a href="/">Forside</a>
+    </div>
+    <!-- topnav end -->
+
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1>Energibesparelser</h1>
+                <h3 style="color: #757575">
+                    Få øget komfort i din bygning og hjælp med at nedbringe byens og dit eget varmetab
+                </h3>
+                <hr>
+                <div>
+                    <img src="/images/energi.jpg" alt="Energibesparelse">
+                </div>
+                <!-- page paragraphs -->
+                <div style="font-size: 16px">
+                    <p>Bygninger i EU forventes at nedsætte deres energiforbrug. Det gælder også varmeforbruget i
+                        Albertslund, hvor alle bygningsejere opfordres til at hjælpe med at
+                        efterisolere og effektivisere.
+                    </p>
+                    <p>
+                        En god velisoleret bygning har et meget lille behov for tilført varme. Det gælder også
+                        for Albertslunds mange boliger og erhvervsbygninger, der for de flestes vedkommende
+                        er bygget i 1960- og -70'erne. Mange er lavet i beton og de fleste har store glasarealer,
+                        der giver kolde rum om vinteren og meget varme rum om sommeren.
+                    </p>
+                    <p>
+                        Energirenoveringen af Albertslund er i fuld gang. Hundredevis af lejerrækkehuse har allerede
+                        reduceret varmeforbruget med 50-60 % , og i hundredevis af gårdhavehuse er på vej.
+                    </p>
+                </div>
+                <!-- page paragraphs end -->
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer -->
+<div class="w3-row">
+    <img src="images/baggrund.png" alt="baggrund" style="width: 100%">
+</div>
+</div>
+</body>
+<footer th:insert="footer.html"></footer>
+<!-- footer end -->
+</html>

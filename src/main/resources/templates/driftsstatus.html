@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driftsstatus</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+<!-- logo with link -->
+<div class="w3-container">
+    <div class="w3-container w3-section">
+        <a href="/">
+            <img src="images/albertslund-forsyning-logo.png" class="w3-hover-opacity" alt="Logo">
+        </a>
+    </div>
+    <!-- end logo -->
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <div class="search-container">
+            <input type="text" placeholder="Skriv hvad du søger..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="/driftsstatus" class="active">Driftsstatus</a>
+        <a href="/energibesparelser">Energibesparelser</a>
+        <a href="/tao">TAO-Ordningen</a>
+        <a href="/">Forside</a>
+    </div>
+    <!-- end navigation bar -->
+
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-container">
+            <h1>Driftsstatus</h1>
+            <h3 style="color: #757575">Her finder du aktuel information om driftsforstyrrelser i varmeforsyningen</h3>
+            <hr>
+            <iframe title="" src="https://dk.sms-service.dk/iFrame/driftstatus-map?customerId=fd02e030-1729-4052-ab17-0747a015e553"
+                    style="width:100%; height: 900px" frameborder="0" seamless="seamless"></iframe>
+            <p>
+                <b>SMS-service</b>
+            </p>
+            <p>
+                Hvis uheldet skulle være ude og der opstår driftsforstyrrelser i det område, hvor du bor, vil du
+                modtage en sms-besked om dette på din mobiltelefon eller e-mail. Du kan tilmelde dig via linket
+                <a href="http://fjernvarme.albertslund.dk/kontakt-os/sms-service/" style="color: #bf1f24" target="_blank">Tilmeld SMS-service</a>
+            </p>
+                <br>
+                <p><b>Kontakt Albertslund Forsyning</b></p>
+                <p>Vognporten 9<br>2620 Albertslund<br><br>Tlf: 4368 6888<br>Mail: <a href="mailto:info@albforsyning.dk" style="color: #bf1f24">info@albforsyning.dk</a><br>
+                    <br>Telefontider:<br><br>Mandag-torsdag: 08.00 - 15.00<br>Fredag: 08.00 - 14.00</p>
+                <p><b>I akutte situationer uden for normal telefontid kan driftsvagten træffes på 4011 8691</b></p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+
+<div class="w3-row">
+    <img src="images/baggrund.png" alt="baggrund" style="width: 100%">
+</div>
+</div>
+</body>
+<footer th:insert="footer.html"></footer>
+</html>

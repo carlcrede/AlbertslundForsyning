@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albertslund Forsyning</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="w3-container">
+    <div class="w3-container w3-section">
+        <a href="/">
+            <img src="images/albertslund-forsyning-logo.png" class="w3-hover-opacity" alt="Logo">
+        </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <div class="search-container">
+            <input type="text" placeholder="Skriv hvad du søger..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="/driftsstatus">Driftsstatus</a>
+        <a href="/energibesparelser">Energibesparelser</a>
+        <a href="/tao">TAO-Ordningen</a>
+        <a href="/" class="active">Forside</a>
+    </div>
+    <div class="w3-display-container">
+        <p class="center_img"><img src="images/forside.jpg" alt="Forside" width="98%"></p>
+        <div class="w3-display-bottomleft w3-container" style="margin-left: -2%">
+            <div class="w3-panel w3-red" style="opacity: 95%; background-color: rgba(191, 31, 36, 0.9) !important">
+                <p style="font-family: 'Open Sans',sans-serif" class="intro">Velkommen til Albertslund Forsyning</p>
+                <p><i>Her kan du finde information om fjernvarme og energibesparelser</i></p>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+            <a href="/tao">
+            <img src="images/tao.jpg" alt="Skal du have udskiftet fjernvarmeanlæg?" style="width: 97%; border-top: 5px solid #bf1f24;">
+            <h3><b>Skal du have udskiftet dit fjernvarmeanlæg?</b></h3>
+            <p style="font-size: 12px">
+                TAO-ordningen - til dig der har et&nbsp;gammelt&nbsp;tilslutningsanlæg.
+                Du kan leje dit næste anlæg istedet for at eje det.
+                Albertslund Forsyning tilbyder en frivillig lejeordning
+            </p>
+            </a>
+        </div>
+        <div class="w3-third w3-container">
+            <div class="w3-padding-32 w3-green w3-circle w3-center" style="padding: 0px 30px">
+                <h3 style="color: white">COVID-19</h3>
+                <p>Ingen kundeekspedition i uge 15 - Påskeugen - Læs mere her</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="images/energitilskud.jpg" alt="Energitilskud" style="width: 97%; border-top: 5px solid #bf1f24;">
+            <h3><b>Energitilskud</b></h3>
+            <p style="font-size: 12px">
+                Albertslund Forsyning støtter borgere og virksomheder i Albertslund Kommune med 1 kr. pr.
+                realiserede kWh-besparelse, når der laves forbedringer på fjernvarmeanlæg og klimaskærm.
+            </p>
+        </div>
+    </div>
+    <div class="w3-row">
+        <img src="images/baggrund.png" alt="baggrund" style="width: 100%">
+    </div>
+</div>
+</body>
+<footer th:insert="footer.html"></footer>
+</html>

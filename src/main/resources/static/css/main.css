@@ -1,0 +1,181 @@
+body {
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, Times, serif;
+}
+h1 {
+    font-size: 50px;
+}
+h1, h3 {
+    line-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-specs {
+    width: 100vw;
+    background-color: #757575;
+    left: 50%;
+    margin-left: -50vw;
+    position: relative
+}
+
+.footer_info {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin-left: 6%;
+
+}
+
+.p_white {
+    color: white;
+}
+
+.intro {
+    font-size: 24px;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.center_img {
+    text-align: center;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    font-family: 'Open Sans',sans-serif
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 16px;
+    font-size: 17px;
+}
+
+.topnav .search-container {
+    float: left;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:last-child) {display: none;}
+    .topnav .search-container button {display: none}
+    .topnav input[type=text] {display: none}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav .search-container button {position: relative}
+    .topnav input[type=text] {position: relative}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/*@media screen and (max-width: 600px) {*/
+/*    .topnav a, .topnav input[type=text], .topnav .search-container button {*/
+/*        float: none;*/
+/*        display: block;*/
+/*        text-align: left;*/
+/*        width: 100%;*/
+/*        margin: 0;*/
+/*        padding: 14px;*/
+/*    }*/
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
